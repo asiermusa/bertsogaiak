@@ -44,11 +44,14 @@ export default {
 @import '../scss/settings';
 .faq {
     background: white;
-    padding: 5em;
+    padding: 1em;
+    @include from(sm) {
+        padding: 4em;
+        display: block;
+    }
     p {
         margin: 2em 0;
         line-height: 26px;
-        padding: 0 2em;
     }
 }
 </style>
