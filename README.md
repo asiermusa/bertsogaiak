@@ -12,6 +12,8 @@ Webgunea erabat irekia da, eta izena eman gabe eskuragarri izango dituzu gai guz
 Gustoko dituzun gaiak gordetzeko, login sistema baten bidez (google) zure emaila gordeko da.
 Ez da erabiltzaileen beste daturik eskatuko, ezta emailik bidaliko ere.
 
+**[Aplikazioa abiarazi](https://asiermusa.github.io/bertsogaiak)**
+
 ![image](https://i.imgur.com/FZaBTsI.png)
 
 ## Erabilitako teknologiak
