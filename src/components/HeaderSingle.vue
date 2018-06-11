@@ -63,6 +63,7 @@ export default {
         background: $secondary;
         padding: 0.8em 1em;
         box-sizing: border-box;
+        height: 82px;
         &.active {
             position: fixed;
             padding: 0.3em 1em;
@@ -72,7 +73,11 @@ export default {
         }
     }
     &__logo {
-        width: 180px;
+      width: 120px;
+      @include from(sm) {
+          font-size: 14px;
+          width: 160px;
+      }
     }
     &__user {
         display: flex;
@@ -101,7 +106,7 @@ export default {
         }
     }
     span {
-        display: none;
+        padding: 0 0.5em;
         @include from(sm) {
             padding: 0 0.8em;
             display: block;
