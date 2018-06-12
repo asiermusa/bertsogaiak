@@ -100,8 +100,9 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
+# dotenv environment and config variables file
 .env
+config.js
 
 
 ### VisualStudioCode ###

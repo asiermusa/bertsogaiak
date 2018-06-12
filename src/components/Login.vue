@@ -8,13 +8,13 @@
     <button @click.prevent="signIn">Saioa hasi!</button>
     <p v-if="msg" class="form__error">{{msg}}</p>
     <p class="form__sign-up">Pasahitza galdu duzu?
-      <router-link :to="{ name: 'resetPassword' }">Sakatu hemen eta eskatu berria!</router-link>
+      <router-link :to="{ name: 'resetPassword' }">eskatu berria!</router-link>
     </p>
     <p class="form__sign-up">Kontu berria sortzeko
       <router-link :to="{ name: 'signUp' }">egin klik hemen!</router-link>
     </p>
     <h3>Edo Google bidez hasi saioa</h3>
-    <button @click="signInWithGoogle" class="button-google">Googlekin saioa hasi</button>
+    <button @click="signInWithGoogle" class="button-google">Googlerekin saioa hasi</button>
   </div>
 </div>
 </template>

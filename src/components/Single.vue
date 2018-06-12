@@ -62,6 +62,7 @@
 <script>
 import axios from 'axios'
 import firebase from 'firebase'
+import {apiUrls} from '../config'
 //import Multiselect from 'vue-multiselect'
 //import InfiniteLoading from 'vue-infinite-loading'
 import headerSingle from './HeaderSingle.vue'
@@ -128,11 +129,11 @@ export default {
       } else {
         let apiUrl = ''
         if (this.slug == 'ofizioak') {
-          apiUrl = 'https://bertsogaiak.herokuapp.com/api/ofizioak/'
+          apiUrl = apiUrls.ofizioak
         } else if (this.slug == 'gaia-emanda') {
-          apiUrl = 'https://bertsogaiak.herokuapp.com/api/bakarkakoak/?type=gaia'
+          apiUrl = apiUrls.gaiaEmanda
         } else if (this.slug == 'puntu-erantzunak') {
-          apiUrl = 'https://bertsogaiak.herokuapp.com/api/bakarkakoak/?type=puntu-erantzuna'
+          apiUrl = apiUrls.puntuErantzunak
         }
 
         axios.get(apiUrl, {
@@ -336,6 +337,7 @@ export default {
     list-style: none;
     background: white;
     min-height: 100vh;
+    overflow-x: hidden;
     &__item {
         position: relative;
         line-height: 19px;

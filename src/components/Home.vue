@@ -182,11 +182,11 @@ export default {
         }
         &-title {
             font-size: 18px;
-            font-weight: bold;
             color: black;
+            font-weight: bold;
         }
         &-number {
-            font-size: 30px;
+            font-size: 28px;
             color: $secondary;
         }
     }
