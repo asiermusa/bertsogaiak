@@ -44,7 +44,6 @@ export const routes = [{
     name: 'resetPassword',
     component: ResetPassword,
     meta: {
-      requiresAuth: true,
       title: 'Pasahitza berreskuratu'
     }
   },
@@ -97,8 +96,7 @@ export const routes = [{
     name: 'gogokoak',
     component: Gogokoak,
     meta: {
-      title: 'Gogokoak',
-      requiresAuth: true
+      title: 'Gogokoak'
     }
   }
 ]

@@ -23,15 +23,8 @@ const router = new VueRouter({
   }
 })
 router.beforeEach((to, from, next) => {
-  let currentUser = 4
-  let requiresAuth = to.matched.some(record => record.meta.requiresAuth)
-  if (requiresAuth && !currentUser) {
-    document.title = (to.meta.title ? to.meta.title + ' - ' : '') + 'Bertso Gaiak';
-    next('/')
-  } else {
-    document.title = (to.meta.title ? to.meta.title + ' - ' : '') + 'Bertso Gaiak';
-    next()
-  }
+  document.title = (to.meta.title ? to.meta.title + ' - ' : '') + 'Bertso Gaiak';
+  next()
 })
 
 new Vue({
