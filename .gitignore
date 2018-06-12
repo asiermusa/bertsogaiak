@@ -102,7 +102,7 @@ typings/
 
 # dotenv environment and config variables file
 .env
-config.js
+src/config.js
 
 
 ### VisualStudioCode ###
